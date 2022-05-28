@@ -1,0 +1,165 @@
+@use '../utils' as *;
+
+.hotel {
+  display: flex;
+  justify-content: center;
+  margin-top: rem(40);
+
+  &__container {
+    margin-top: rem(20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // width: 100%;
+    // max-width: rem(1024);
+    // position: relative;
+  }
+
+  &__silderContainer {
+    position: relative;
+    width: 100%;
+  }
+
+  &__wrapper {
+    width: 100%;
+    max-width: rem(1024);
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+    position: relative;
+  }
+
+  &__btnBooking {
+    position: absolute;
+    top: 10;
+    right: 0;
+    padding: rem(10);
+    background-color: var(--primary-500);
+    color: var(--grey-700);
+    font-weight: bold;
+  }
+
+  &__title {
+    font-size: rem(24);
+  }
+
+  &__address {
+    font-size: rem(12);
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+  }
+
+  &__distance {
+    color: var(--primary-500);
+    font-weight: bold;
+  }
+
+  &__priceHighlight {
+    color: var(--secondry-700);
+    font-weight: 500;
+  }
+
+  &__images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__imgWrapper {
+    width: 33%;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  &__details {
+    display: flex;
+    justify-content: center;
+    gap: rem(3);
+    margin-top: rem(20);
+  }
+
+  &__detailsText {
+    flex: 3;
+  }
+
+  &__detailsDesc {
+    font-size: rem(14);
+    margin-top: rem(10);
+  }
+
+  &__detailsPrice {
+    flex: 1;
+    background-color: var(--primary-100);
+    padding: rem(20);
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+
+    h1 {
+      font-size: rem(18);
+      color: var(--primary-700);
+    }
+
+    span {
+      font-size: rem(14);
+    }
+
+    h2 {
+      font-weight: 300;
+    }
+
+    button {
+      padding: rem(10) rem(20);
+      background-color: var(--primary-500);
+      color: var(--primary-100);
+      font-weight: bold;
+    }
+  }
+
+  &__slider {
+    position: sticky;
+    top: 0;
+    // left: 0;
+    width: 80vw;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.294);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+  }
+
+  &__sliderImgWrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__sliderImg {
+    width: 80%;
+    height: 80vh;
+  }
+
+  &__sliderCloseBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: rem(30);
+    color: var(--primary-500);
+    cursor: pointer;
+  }
+
+  &__sliderArrowBtnLeft,
+  &__sliderArrowBtnRight {
+    cursor: pointer;
+    font-size: rem(30);
+    color: var(--primary-500);
+    margin: rem(20);
+  }
+}

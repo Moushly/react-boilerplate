@@ -1,0 +1,32 @@
+@use '../utils' as *;
+.mailList {
+  background-color: var(--primary-500);
+  margin-top: rem(40);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+    gap: rem(20);
+    padding: rem(50);
+    text-transform: capitalize;
+  }
+
+  &__inputContainer {
+    input {
+      width: rem(300);
+      height: rem(30);
+      padding: rem(10);
+      border: none;
+      margin-right: rem(5);
+      cursor: pointer;
+    }
+
+    button {
+      height: rem(30);
+      background-color: var(--primary-100);
+      color: var(--primary-500);
+    }
+  }
+}

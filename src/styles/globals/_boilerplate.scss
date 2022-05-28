@@ -1,0 +1,72 @@
+@use '../utils' as *;
+
+/*! file was created using below guidelines */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+/**
+   * Remove the margin and padding in all browsers.
+   */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--bodyFont);
+  line-height: 1.75;
+  color: var(--green-dark);
+  margin: 0;
+  padding: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+
+main {
+  display: block;
+}
+
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+
+// img {
+//   border-style: none;
+//   width: 100%;
+//   display: block;
+//   object-fit: cover;
+// }
+
+code,
+pre {
+  background-color: var(--grey-800);
+  color: var(--white);
+  padding: 0.2rem 0.624rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

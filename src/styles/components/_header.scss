@@ -1,0 +1,128 @@
+@use '../utils/' as *;
+
+.header {
+  background-color: var(--primary-700);
+  color: var(--primary-100);
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  &__container {
+    margin: rem(20) 0 rem(50) 0;
+    // display: flex;
+    // flex-direction: column;
+    // position: relative;
+
+    &.listMode {
+      margin: rem(20) 0 0 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: rem(30);
+    margin-bottom: rem(20);
+  }
+
+  &__listItems {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+
+    &.active {
+      border: 1px solid var(--primary-100);
+      border-radius: rem(15);
+      padding: rem(5) rem(10);
+    }
+  }
+
+  &__description {
+    margin: rem(5) 0;
+  }
+
+  &__btn {
+    background-color: var(--primary-100);
+    color: var(--primary-700);
+  }
+
+  &__search {
+    height: rem(60);
+    width: 100%;
+    max-width: rem(1024);
+    background-color: var(--white);
+    border: rem(5) solid var(--primary-500);
+    display: flex;
+    align-items: center;
+    color: var(--primary-700);
+    justify-content: space-around;
+    border-radius: rem(10);
+    position: absolute;
+    bottom: rem(-30);
+  }
+
+  &__searchItems {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+    color: var(--grey-400);
+  }
+
+  &__searchIcon {
+    color: var(--grey-500);
+  }
+
+  &__searchInput {
+    border: none;
+    outline: none;
+    color: var(--grey-500);
+  }
+
+  &__searchCal {
+    cursor: pointer;
+  }
+
+  &__searchBookingDates {
+    // display: none;
+    position: absolute;
+    top: rem(54);
+    z-index: 2;
+  }
+
+  &__searchBtn {
+    background-color: var(--primary-700);
+    color: var(--primary-100);
+  }
+
+  &__searchOptions {
+    position: absolute;
+    top: rem(54);
+    background-color: var(--white);
+    color: var(--grey-500);
+    border-radius: rem(5);
+    box-shadow: var(--shadow-3);
+    z-index: 2;
+  }
+
+  &__searchOptionsItems {
+    width: rem(200);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 rem(5);
+  }
+
+  &__optionsCounter {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+    font-size: rem(12);
+  }
+
+  &__optionsCounterBtn {
+    width: rem(30);
+    height: rem(30);
+    border: 1px solid var(--primary-200);
+    color: var(--grey-500);
+    cursor: pointer;
+    background-color: var(--white);
+  }
+}

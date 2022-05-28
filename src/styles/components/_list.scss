@@ -1,0 +1,92 @@
+@use '../utils' as *;
+
+.list {
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    // display: flex;
+    // justify-content: center;
+    margin-top: rem(20);
+  }
+
+  &__wrapper {
+    width: 100%;
+    // max-width: rem(1024);
+    display: flex;
+    gap: rem(20);
+  }
+
+  &__search {
+    flex: 1;
+    background-color: var(--secondry-700);
+    padding: rem(10);
+    border-radius: rem(10);
+    position: sticky;
+    top: 10px;
+    height: max-content;
+  }
+
+  &__searchTitle {
+    font-size: rem(24);
+    color: var(--grey-500);
+  }
+
+  &__searchItem {
+    display: flex;
+    flex-direction: column;
+
+    gap: rem(5);
+    margin-bottom: rem(10);
+    color: var(--grey-700);
+
+    label {
+      font-size: rem(12);
+    }
+
+    input {
+      text-transform: capitalize;
+      border: none;
+      border-radius: rem(5);
+      height: rem(30);
+      padding: rem(10);
+    }
+  }
+
+  &__options {
+    padding: rem(8);
+  }
+
+  &__searchBookingTxt {
+    span {
+      height: rem(30);
+      padding: rem(5);
+      background-color: var(--white);
+      border-radius: rem(5);
+      cursor: pointer;
+    }
+  }
+
+  &__searchOptions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(8);
+
+    input {
+      width: rem(50);
+    }
+  }
+
+  &__searchBtn {
+    background-color: var(--primary-500);
+    color: var(--grey-700);
+    width: 100%;
+    font-size: rem(12);
+    font-weight: bold;
+    padding: rem(8);
+  }
+
+  &__result {
+    flex: 3;
+  }
+}

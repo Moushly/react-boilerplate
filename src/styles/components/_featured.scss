@@ -1,0 +1,25 @@
+@use '../utils' as *;
+
+.featured {
+  z-index: 1;
+
+  &__listing {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(20);
+  }
+
+  &__items {
+    position: relative;
+    color: var(--white);
+    border-radius: rem(10);
+    overflow: hidden;
+    height: rem(300);
+  }
+
+  &__titles {
+    position: absolute;
+    bottom: rem(10);
+    left: rem(15);
+  }
+}

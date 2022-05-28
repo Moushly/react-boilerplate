@@ -1,0 +1,27 @@
+@use '../utils/' as *;
+
+.navbar {
+  height: rem(55);
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-700);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    color: var(--red-dark);
+    font-weight: 700;
+    font-size: rem(22);
+    // padding-left: rem(20);
+  }
+
+  &__btn {
+    margin-left: rem(20);
+    background-color: var(--primary-100);
+    color: var(--primary-700);
+  }
+}
